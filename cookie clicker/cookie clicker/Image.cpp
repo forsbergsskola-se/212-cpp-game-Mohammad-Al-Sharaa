@@ -2,20 +2,19 @@
 #include <SDL.h>
 #include <cstdio>
 
-bool Image::loadMedia(const char* path)
+Image::Image(const char* path) : success{}
 {
-	//Loading success flag
-	bool success = true;
+	
 
 	//Load splash image
 	PNGcookie = SDL_LoadBMP(path);
 	if (!PNGcookie)
 	{
-		printf("Unable to load image %s! SDL Error: %s\n", "img/PNGcookie.bmp", SDL_GetError());
-		success = false;
+		printf("Unable to load image %s! SDL Error: %s\n", path, SDL_GetError());
+		return;
 	}
 
-	return success;
+	success = true;
 }
 
 Image::~Image() {

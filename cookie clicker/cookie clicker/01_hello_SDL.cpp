@@ -6,6 +6,7 @@ and may not be redistributed without written permission.*/
 #include <stdio.h>
 #include "Window.h"
 #include "Image.h"
+#include <iostream>
 
 //Starts up SDL and creates window
 
@@ -42,11 +43,30 @@ int main(int argc, char* args[])
 			return -1;
 		}
 
-		window.render(image); 
 			//Hack to get window to stay up
-			SDL_Event e; bool quit = false; while (quit == false) { while (SDL_PollEvent(&e)) { if (e.type == SDL_QUIT) quit = true; } }
-		
-	
+			SDL_Event e; bool quit = false;
+			while (!quit) {
+				while (SDL_PollEvent(&e)) {
+					if (e.type == SDL_QUIT) quit = true;
+
+					if (e.type == SDL_MOUSEMOTION) {
+						int x, y;
+						SDL_GetMouseState(&x, &y);
+						std::cout << x << " : " << y << std::endl;
+					}
+
+					if (e.type == SDL_MOUSEBUTTONDOWN) {
+						int x, y;
+						SDL_GetMouseState(&x, &y);
+						if (x >= 253 && y >= 205 && x <= 340 && y <= 263) {
+							if (e.button.button == SDL_BUTTON_LEFT) {
+								std::cout << "Left mouse button is down" << std::endl;
+							}
+						}
+					}
+				}
+				window.render(image);
+			}
 
 	return 0;	
 }

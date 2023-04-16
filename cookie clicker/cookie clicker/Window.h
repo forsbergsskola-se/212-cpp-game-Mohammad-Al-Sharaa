@@ -10,13 +10,10 @@ class Window
 
 	bool success;
 
-	bool init(int width, int height);
 	
 
 public:
-	Window(int width, int height) {
-		success = init(width, height);
-	}
+	Window(int width, int height);
 	~Window();
 	bool wasSuccessfull() { return success; }
 	void render(Image& image);
