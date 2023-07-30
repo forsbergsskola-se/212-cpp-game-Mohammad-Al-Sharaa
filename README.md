@@ -24,10 +24,16 @@ It processes various types of events, such as SDL_QUIT, SDL_MOUSEMOTION, and SDL
 This way, the application can respond to user input and control program flow accordingly.
 
 ## Challenges
-My biggest challenge in during this assignment was the issue of rendering text, it took some time and caused me the most delay.
+My biggest challenge during this assignment was the issue of rendering text, it took some time and caused me the most delay.
 In the end with the help of a friend, I managed to make it work the way I intended.
 Another challenge I had to face was using a design pattern due to not knowing much, if anything about them.
 
 ## Learnings
 I learned a lot during this project, mainly how to work in SDL in general.
 Additionally, I have delved into C++ programming, exploring various concepts and techniques, with a strong emphasis on object-oriented programming (OOP) and other C++ features.
+
+## ScreenShots & Video
+![Screenshot 1](https://github.com/forsbergsskola-se/212-cpp-game-Mohammad-Al-Sharaa/assets/112474134/1809e688-41a8-4cbc-a173-8cf9cc91c800)
+![Screenshot 3](https://github.com/forsbergsskola-se/212-cpp-game-Mohammad-Al-Sharaa/assets/112474134/6fa8b268-de0e-4653-94a3-d353b0ad1c8a)
+![Screenshot 2](https://github.com/forsbergsskola-se/212-cpp-game-Mohammad-Al-Sharaa/assets/112474134/86ac7fdc-f429-464b-9232-0971c6ffbe1c)
+![Screenshot 4](https://github.com/forsbergsskola-se/212-cpp-game-Mohammad-Al-Sharaa/assets/112474134/fd7a006f-cf4c-4745-93f6-0fe5db0eda13)
