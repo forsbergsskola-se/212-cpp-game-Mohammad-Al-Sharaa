@@ -6,7 +6,7 @@ This Game is a simple cookie clicker, you click on the cookie and you gain a coo
 
 ## Design Patterns
 
-### Pattern 1
+### Observer pattern
 The Observer pattern is a behavioral design pattern that allows a one-to-many dependency between objects, ensuring that when one object (the subject) changes its state, all its dependents (observers) are notified and updated automatically. 
 It enables loose coupling between the subject and its observers, promoting flexibility and maintainability in the software design.
 The observer pattern has several advantages, such as promoting modularity and reusability, supporting dynamic and flexible behavior, and enabling parallel and asynchronous processing.
@@ -14,11 +14,11 @@ The observer pattern has several advantages, such as promoting modularity and re
 
 ## Noteworthy C++ Features
 
-### Feature 1
+### Object-Oriented Programming (OOP)
 Object-Oriented Programming (OOP): The code is structured using classes to encapsulate data and behavior related to different entities. 
 For example, Window, Image, and Font are classes that abstract the SDL window, image loading, and font loading functionality, respectively. OOP allows for better organization and modularity in the code.
 
-### Feature 2
+### SDL Event Handling
 SDL Event Handling: The code demonstrates event-driven programming using the SDL event loop. 
 It processes various types of events, such as SDL_QUIT, SDL_MOUSEMOTION, and SDL_MOUSEBUTTONDOWN. 
 This way, the application can respond to user input and control program flow accordingly.
