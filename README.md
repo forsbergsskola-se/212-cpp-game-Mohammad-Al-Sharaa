@@ -25,7 +25,7 @@ This way, the application can respond to user input and control program flow acc
 
 ## Challenges
 My biggest challenge during this assignment was the issue of rendering text, it took some time and caused me the most delay.
-In the end with the help of a friend, I managed to make it work the way I intended.
+In the end I managed to get it to work, the main problem seemed to be due to me still being new to using SDL as it was an issue in the properties along with some code.
 Another challenge I had to face was using a design pattern due to not knowing much, if anything about them.
 
 ## Learnings
