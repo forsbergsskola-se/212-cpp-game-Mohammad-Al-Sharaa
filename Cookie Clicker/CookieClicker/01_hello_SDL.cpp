@@ -66,13 +66,13 @@ int main(int argc, char* args[])
 				quit = true;
 
 			if (e.type == SDL_MOUSEMOTION) {
-				int x, y;
+				int x = 0, y = 0;
 				SDL_GetMouseState(&x, &y);
 			//	std::cout << x << " : " << y << std::endl;
 			}
 
 			if (e.type == SDL_MOUSEBUTTONDOWN) {
-				int x, y;
+				int x = 0, y = 0;
 				SDL_GetMouseState(&x, &y);
 
 				SDL_Point mousePointer = {x, y};
